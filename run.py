@@ -7,13 +7,18 @@ def main_menu():
     print("MAIN MENU")
     print("")
     print("Please enter the number of the conversion you would like to carry out")
+<<<<<<< HEAD
     print("-" * 69)
+=======
+    print("-" * 79)
+>>>>>>> a7d4f3f77e663c11a86a5ecc2ba0b00aa60cc398
     print("1. Temperature")
     print("2. Length")
     print("3. Volume")
     print("4. Currency")
 
     selection = input("Please enter your selection here:")
+<<<<<<< HEAD
 
     if selection == ("1"):
         convert_temp()
@@ -29,3 +34,10 @@ def convert_temp():
 
 main_menu()
 
+=======
+    print(selection)
+
+main_menu()
+
+
+>>>>>>> a7d4f3f77e663c11a86a5ecc2ba0b00aa60cc398
