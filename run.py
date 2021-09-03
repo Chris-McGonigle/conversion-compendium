@@ -1,6 +1,6 @@
 def main_menu():
     """
-    Function to display the main menu options
+    Function to display the main menu options and capture user selection
     """
     print("Welcome to Chris' Conversion Compendium")
     print("")
@@ -16,7 +16,7 @@ def main_menu():
     selection = input("Please enter your selection here:")
 
     if selection == ("1"):
-        convert_temp()
+        Temperature.convert_temp()
     elif selection == ("2"):
         convert_length()
     elif selection == ("3"):
@@ -24,9 +24,19 @@ def main_menu():
     elif selection == ("4"):
         convert_currrency()
 
+class Temperature:
+    def convert_temp():
+        print("You have selected Temperature. Is this correct?")
 
-def convert_temp():
-    print("worked")
+        confirm_type = input("Y/N:")
+
+        if confirm_type == ("Y"):
+            print("Please select your starting unit. Enter C, F or K to start with Celsius, Farenheit or Kelvin")
+            temp_unit = input("Unit Type (C,F or K):")
+        else: 
+            main_menu()
+
+
 
 
 def convert_length():
