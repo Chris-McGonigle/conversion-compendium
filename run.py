@@ -24,19 +24,16 @@ def main_menu():
     elif selection == ("4"):
         convert_currrency()
 
+
 class Temperature:
     def convert_temp():
-        print("You have selected Temperature. Is this correct?")
+        print("\nYou have selected Temperature. Is this correct?")
 
-        confirm_type = input("Y/N:")
+        confirm_type = input("\nY/N:").upper()
 
         if confirm_type == ("Y"):
-            print("Please select your starting unit. Enter C, F or K to start with Celsius, Farenheit or Kelvin")
-            temp_unit = input("Unit Type (C,F or K):")
-        else: 
-            main_menu()
-
-
+            print("\nSelect starting unit in Celsius, Farenheit or Kelvin")
+            input("Unit Type (C,F or K):").upper()
 
 
 def convert_length():
