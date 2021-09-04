@@ -49,9 +49,7 @@ class Temperature:
                 print(f"\n{temp_value}{temp_selection} converted equals:")
                 print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
-                Temperature.run_again()         
-
-
+                Temperature.run_again()
         elif confirm_type == ("N"):
             main_menu()
 
@@ -106,7 +104,8 @@ class Temperature:
         convert_again = input("\nY/N:").upper()
         if convert_again == ("Y"):
             Temperature.convert_temp()
-        else: main_menu()
+        else:
+            main_menu()
 
 
 main_menu()
