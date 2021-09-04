@@ -1,3 +1,5 @@
+import pyinputplus as pyip
+
 def main_menu():
     """
     Function to display the main menu options and capture user selection
@@ -29,9 +31,9 @@ class Temperature:
         """
         print("\nYou have selected Temperature. Is this correct?")
 
-        confirm_type = input("\nY/N:").upper()
+        confirm_type = pyip.inputYesNo("\nY/N:")
 
-        if confirm_type == ("Y"):
+        if confirm_type == ("yes"):
             print("\nSelect starting unit in Celsius, Fahrenheit or Kelvin")
             temp_selection = input("Unit Type (C,F or K):").upper()
             temp_value = float(input("\nPlease enter the temperature to convert:"))
@@ -50,7 +52,7 @@ class Temperature:
                 print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
                 Temperature.run_again()
-        elif confirm_type == ("N"):
+        elif confirm_type == ("no"):
             main_menu()
 
     def celsius2kelvin(temp_value):
