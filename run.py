@@ -103,8 +103,8 @@ class Temperature:
         """
         print("-" * 45)
         print("\nWould you like to convert another Temperature?")
-        convert_again = input("\nY/N:").upper()
-        if convert_again == ("Y"):
+        convert_again = pyip.inputYesNo("\nY/N:")
+        if convert_again == ("yes"):
             Temperature.convert_temp()
         else:
             main_menu()
