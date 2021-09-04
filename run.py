@@ -75,42 +75,42 @@ class Temperature:
         Conversion formula for Celsius to Kelvin
         """
         c2k = temp_value + 273.15
-        return c2k
+        return float("{:.2f}".format(c2k))
 
     def celsius2fahrenheit(temp_value):
         """
         Conversion formula for Celsius to Fahrenheit
         """
         c2f = (temp_value * 9/5) + 32
-        return c2f
+        return float("{:.2f}".format(c2f))
 
     def fahrenheit2celsius(temp_value):
         """
         Conversion formula for Fahrenheit to Celsius
         """
         f2c = (temp_value - 32) * 5/9
-        return f2c
+        return float("{:.2f}".format(f2c))
 
     def fahrenheit2kelvin(temp_value):
         """
         Conversion formula for Fahrenheit to Kelvin
         """
         f2k = (temp_value + 459.67) / 1.8
-        return f2k
+        return float("{:.2f}".format(f2k))
 
     def kelvin2celsius(temp_value):
         """
         Conversion formula for Kelvin to Celsius
         """
         k2c = temp_value - 273.15
-        return k2c
+        return float("{:.2f}".format(k2c))
 
     def kelvin2fahrenheit(temp_value):
         """
         Conversion formula for Kelvin to Fahrenheit
         """
         k2f = (temp_value * 1.8) - 459.67
-        return k2f    
+        return float("{:.2f}".format(k2f))    
 
 main_menu()
 
