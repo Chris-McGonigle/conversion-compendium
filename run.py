@@ -39,32 +39,17 @@ class Temperature:
                 print(f"\n{temp_value}{temp_selection} converted equals:")
                 print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
                 print(f"\n{Temperature.celsius2kelvin(temp_value)} Kelvin")
-                print("-" * 45)
-                print("\nWould you like to convert another Temperature?")
-                convert_again = input("\nY/N:").upper()
-                if convert_again == ("Y"):
-                    Temperature.convert_temp()
-                else: main_menu()
+                Temperature.run_again()
             elif temp_selection == ("F"):
                 print(f"\n{temp_value}{temp_selection} converted equals:")
                 print(f"\n{Temperature.fahrenheit2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.fahrenheit2kelvin(temp_value)} Kelvin")
-                print("-" * 45)
-                print("\nWould you like to convert another Temperature?")
-                convert_again = input("\nY/N:").upper()
-                if convert_again == ("Y"):
-                    Temperature.convert_temp()
-                else: main_menu()
+                Temperature.run_again()
             elif temp_selection == ("K"):
                 print(f"\n{temp_value}{temp_selection} converted equals:")
                 print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
-                print("-" * 45)
-                print("\nWould you like to convert another Temperature?")
-                convert_again = input("\nY/N:").upper()
-                if convert_again == ("Y"):
-                    Temperature.convert_temp()
-                else: main_menu()         
+                Temperature.run_again()         
 
 
         elif confirm_type == ("N"):
@@ -110,7 +95,19 @@ class Temperature:
         Conversion formula for Kelvin to Fahrenheit
         """
         k2f = (temp_value * 1.8) - 459.67
-        return float("{:.2f}".format(k2f))    
+        return float("{:.2f}".format(k2f))
+
+    def run_again():
+        """
+        Refactored function that asks user do they want to convert again
+        """
+        print("-" * 45)
+        print("\nWould you like to convert another Temperature?")
+        convert_again = input("\nY/N:").upper()
+        if convert_again == ("Y"):
+            Temperature.convert_temp()
+        else: main_menu()
+
 
 main_menu()
 
