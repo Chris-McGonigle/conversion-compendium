@@ -15,9 +15,9 @@ def main_menu():
     print("3. Volume")
     print("4. Currency")
 
-    selection = input("\nPlease enter your selection here:")
+    selection = pyip.inputNum("\nPlease enter your selection here:",lessThan=5)
 
-    if selection == ("1"):
+    if selection == (1):
         Temperature.convert_temp()
 
 
