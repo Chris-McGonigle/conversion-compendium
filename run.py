@@ -37,6 +37,7 @@ class Temperature:
             temp_value = float(input("\nPlease enter the temperature to convert:"))
             if temp_selection == ("C"):
                 print(f"\n{temp_value}{temp_selection} converted equals:")
+                print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
                 print(f"\n{Temperature.celsius2kelvin(temp_value)} Kelvin")
         elif confirm_type == ("N"):
             main_menu()
@@ -47,6 +48,13 @@ class Temperature:
         """
         c2k = temp_value + 273.15
         return c2k
+
+    def celsius2fahrenheit(temp_value):
+        """
+        Conversion formula for Celsius to Fahrenheit
+        """
+        c2f = (temp_value * 9/5) + 32
+        return c2f    
 
 main_menu()
 
