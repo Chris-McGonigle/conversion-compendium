@@ -7,7 +7,7 @@ def main_menu():
     print("MAIN MENU")
     print("")
     print("Enter the number of the conversion type below")
-    print("-" * 69)
+    print("-" * 47)
     print("1. Temperature")
     print("2. Length")
     print("3. Volume")
@@ -39,6 +39,14 @@ class Temperature:
                 print(f"\n{temp_value}{temp_selection} converted equals:")
                 print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
                 print(f"\n{Temperature.celsius2kelvin(temp_value)} Kelvin")
+                print("-" * 47)
+                print("\nWould you like to convert another Temperature?")
+                convert_again = input("\nY/N:").upper()
+                if convert_again == ("Y"):
+                    Temperature.convert_temp()
+                else: main_menu()    
+
+
         elif confirm_type == ("N"):
             main_menu()
 
