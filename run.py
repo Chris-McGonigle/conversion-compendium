@@ -86,7 +86,21 @@ class Temperature:
         Conversion formula for Fahrenheit to Kelvin
         """
         f2k = (temp_value + 459.67) / 1.8
-        return f2k   
+        return f2k
+
+    def kelvin2celsius(temp_value):
+        """
+        Conversion formula for Kelvin to Celsius
+        """
+        k2c = 273.15 - temp_value
+        return k2c
+
+    def kelvin2fahrenheit(temp_value):
+        """
+        Conversion formula for Kelvin to Fahrenheit
+        """
+        k2f = (temp_value * 1.8) - 459.67
+        return k2f    
 
 main_menu()
 
