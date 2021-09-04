@@ -69,7 +69,14 @@ class Temperature:
         Conversion formula for Fahrenheit to Celsius
         """
         f2c = (temp_value – 32) * 5/9
-        return f2c     
+        return f2c
+
+    def fahrenheit2kelvin(temp_value):
+        """
+        Conversion formula for Fahrenheit to Kelvin
+        """
+        f2k = (temp_value − 32) × 5/9 + 273.15
+        return f2k   
 
 main_menu()
 
