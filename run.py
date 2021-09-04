@@ -54,7 +54,17 @@ class Temperature:
                 convert_again = input("\nY/N:").upper()
                 if convert_again == ("Y"):
                     Temperature.convert_temp()
-                else: main_menu()     
+                else: main_menu()
+            elif temp_selection == ("K"):
+                print(f"\n{temp_value}{temp_selection} converted equals:")
+                print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
+                print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
+                print("-" * 45)
+                print("\nWould you like to convert another Temperature?")
+                convert_again = input("\nY/N:").upper()
+                if convert_again == ("Y"):
+                    Temperature.convert_temp()
+                else: main_menu()         
 
 
         elif confirm_type == ("N"):
@@ -92,7 +102,7 @@ class Temperature:
         """
         Conversion formula for Kelvin to Celsius
         """
-        k2c = 273.15 - temp_value
+        k2c = temp_value - 273.15
         return k2c
 
     def kelvin2fahrenheit(temp_value):
