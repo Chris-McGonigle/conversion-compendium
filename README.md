@@ -28,3 +28,19 @@ Upon hitting enter, the user is then presented with their original unit, and it'
 
 #### Currency Conversion
 
+## Testing
+
+### Input Validation
+
+## Deployment
+
+This project was deployed using Code Institute's mock Heroku terminal as follows:
+
+1. Create the Gitpod repo via the Github template.
+2. Log into Heroku and create a new app.
+3. Set Heroku build packs to Python and NodeJS (in that order)
+4. Link Github and Heroku accounts
+5. Select the main repository and link to the Heroku app
+6. Click on deploy.
+
+A live version of the website can be found here....
