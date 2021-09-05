@@ -5,7 +5,7 @@ def main_menu():
     """
     Function to display the main menu options and capture user selection
     """
-    print("\nWelcome to Chris' Conversion Compendium")
+    print("\nWelcome to Chris's Conversion Compendium")
     print("")
     print("MAIN MENU")
     print("")
@@ -108,6 +108,27 @@ class Temperature:
         if convert_again == ("yes"):
             Temperature.convert_temp()
         else:
+            main_menu()
+
+class Length:
+    def convert_length():
+        """
+        Function to convert length. Function first checks if selection
+        is what the user intended. If not it loops back to main menu.
+        It then takes the user input which is then passed through
+        the calculation function
+        """
+        print("\nYou have selected Length. Is this correct?")
+
+        confirm_type = pyip.inputYesNo("\nY/N:")
+
+        if confirm_type == ("yes"):
+            print("\nEnter the number of your starting unit\n")
+            len_selection = pyip.inputMenu(["Nanometre", "Micrometre", "Millimetre", "Centimetre", "Metre", "Kilometre", "Inch", "Foot", "Yard", "Mile", "Nautical Mile"], numbered=True)
+            len_value = pyip.inputNum("\nPlease enter the length to convert:")
+
+
+        elif confirm_type == ("no"):
             main_menu()
 
 
