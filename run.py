@@ -34,21 +34,21 @@ class Temperature:
         confirm_type = pyip.inputYesNo("\nY/N:")
 
         if confirm_type == ("yes"):
-            print("\nSelect starting unit in Celsius, Fahrenheit or Kelvin")
-            temp_selection = input("Unit Type (C,F or K):").upper()
+            print("\nEnter the number of your starting unit\n")
+            temp_selection = pyip.inputMenu(["Celsius", "Fahrenheit", "Kelvin"], numbered=True)
             temp_value = float(input("\nPlease enter the temperature to convert:"))
-            if temp_selection == ("C"):
-                print(f"\n{temp_value}{temp_selection} converted equals:")
+            if temp_selection == ("Celsius"):
+                print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
                 print(f"\n{Temperature.celsius2kelvin(temp_value)} Kelvin")
                 Temperature.run_again()
-            elif temp_selection == ("F"):
-                print(f"\n{temp_value}{temp_selection} converted equals:")
+            elif temp_selection == ("Fahrenheit"):
+                print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.fahrenheit2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.fahrenheit2kelvin(temp_value)} Kelvin")
                 Temperature.run_again()
-            elif temp_selection == ("K"):
-                print(f"\n{temp_value}{temp_selection} converted equals:")
+            elif temp_selection == ("Kelvin"):
+                print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
                 print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
                 Temperature.run_again()
