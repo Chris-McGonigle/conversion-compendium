@@ -20,6 +20,8 @@ def main_menu():
 
     if selection == (1):
         Temperature.convert_temp()
+    elif selection == (2):
+        Length.convert_length()
 
 
 class Temperature:
