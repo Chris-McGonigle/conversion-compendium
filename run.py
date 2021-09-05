@@ -1,5 +1,6 @@
 import pyinputplus as pyip
 
+
 def main_menu():
     """
     Function to display the main menu options and capture user selection
@@ -15,7 +16,7 @@ def main_menu():
     print("3. Volume")
     print("4. Currency")
 
-    selection = pyip.inputNum("\nPlease enter your selection here:",lessThan=5)
+    selection = pyip.inputNum("\nPlease enter your selection here:", lessThan=5)
 
     if selection == (1):
         Temperature.convert_temp()
@@ -111,4 +112,3 @@ class Temperature:
 
 
 main_menu()
-
