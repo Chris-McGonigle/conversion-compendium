@@ -13,3 +13,18 @@ Chris's Conversion Compendium is very intuitive to use. Upon running the program
 When an option is selected, a user has to validate their choice, and then select a starting unit to convert. A user is then promted to enter their numerical value to be converted. 
 
 Upon hitting enter, the user is then presented with their original unit, and it's conversion into numerous selected popular outputs. The user is then asked would they like to carry out another conversion, or they can return to the main menu. 
+
+## Features
+
+### Initial Deployment Features
+
+#### Main Menu
+
+#### Temperature Conversion
+
+#### Length Conversion
+
+#### Volume Conversion
+
+#### Currency Conversion
+
