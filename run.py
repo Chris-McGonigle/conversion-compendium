@@ -133,28 +133,28 @@ class Length:
             len_value = pyip.inputNum("\nPlease enter the length to convert:")
 
             conversion_factors = {
-                'kilometre-kilometre': '1', 'metre-kilometre': '0.001', 'centimetre-kilometre': '0.00001', 'millimetre-kilometre': '0.000001',
-                'micrometre-kilometre': '0.000000001', 'nanometre-kilometre': '0.000000000001', 'mile-kilometre': '1.60934',
-                'yard-kilometre': '0.000914397727272727', 'foot-kilometre': '0.000304799242424242', 'inch-kilometre': '2.53999368686869',
-                'nautical mile-kilometre': '1.852',
+                'kilometre': {'kilometre': '1', 'metre': '0.001', 'centimetre': '0.00001', 'millimetre': '0.000001',
+                'micrometre': '0.000000001', 'nanometre': '0.000000000001', 'mile': '1.60934',
+                'yard': '0.000914397727272727', 'foot': '0.000304799242424242', 'inch': '2.53999368686869',
+                'nautical mile': '1.852'},
 
-                'kilometre-metre': '1000', 'metre-metre': '1', 'centimetre-metre': '0.01', 'millimetre-metre': '0.001', 'micrometre-metre': '0.000001',
-                'nanometre-metre': '0.000000001', 'mile-metre': '1609.34', 'yard-metre': '0.914397727272727', 'foot-metre': '0.304799242424242',
-                'inch-metre': '0.0253999368686869', 'nautical mile-metre': '1852',
+                'metre': {'kilometre': '1000', 'metre': '1', 'centimetre': '0.01', 'millimetre': '0.001', 'micrometre': '0.000001',
+                'nanometre': '0.000000001', 'mile': '1609.34', 'yard': '0.914397727272727', 'foot': '0.304799242424242',
+                'inch': '0.0253999368686869', 'nautical mile': '1852'},
 
-                'kilometre-centimetre': '100000', 'metre-centimetre': '100', 'centimetre-centimetre': '1', 'millimetre-centimetre': '0.1',
-                'micrometre-centimetre': '0.0001', 'nanometre-centimetre': '0.0000001', 'mile-centimetre': '160934',
-                'yard-centimetre': '91.4397727272727', 'foot-centimetre': '30.4799242424242', 'inch-centimetre': '2.53999368686869',
-                'nautical mile-centimetre': '185200',
+                'centimetre': {'kilometre': '100000', 'metre': '100', 'centimetre': '1', 'millimetre': '0.1',
+                'micrometre': '0.0001', 'nanometre': '0.0000001', 'mile': '160934',
+                'yard': '91.4397727272727', 'foot': '30.4799242424242', 'inch': '2.53999368686869',
+                'nautical mile': '185200'},
 
-                'kilometre-millimetre': '1000000', 'metre-millimetre': '1000', 'centimetre-millimetre': '10', 'millimetre-millimetre': 1,
-                'micrometre-millimetre': '0.001', 'nanometre-millimetre': '0.000001', 'mile-millimetre': '1609340',
-                'yard-millimetre': '914.397727272727', 'foot-millimetre': '304.799242424242', 'inch-millimetre': '25.3999368686869',
-                'nautical mile-millimetre': '1852000',
+                'millimetre': {'kilometre': '1000000', 'metre': '1000', 'centimetre': '10', 'millimetre': 1,
+                'micrometre': '0.001', 'nanometre': '0.000001', 'mile': '1609340',
+                'yard': '914.397727272727', 'foot': '304.799242424242', 'inch': '25.3999368686869',
+                'nautical mile': '1852000'},
 
-                'kilometre-micrometre': '1000000000', 'metre-micrometre': '1000000', 'centimetre-micrometre': '10000', 'millimetre-micrometre': '1000',
-                'micrometre-micrometre': '1', 'nanometre-micrometre': '0.001', 'mile-micrometre': '1609340000', 'yard-micrometre': '914397.727272727',
-                'foot-micrometre': '304799.242424242', 'inch-micrometre': '25399.9368686869', 'nautical mile-micrometre': '1852000000',
+                'micrometre': {'kilometre': '1000000000', 'metre': '1000000', 'centimetre': '10000', 'millimetre': '1000',
+                'micrometre': '1', 'nanometre': '0.001', 'mile': '1609340000', 'yard': '914397.727272727',
+                'foot': '304799.242424242', 'inch': '25399.9368686869', 'nautical mile': '1852000000'},
 
                 'kilometre-nanometre': '1000000000000', 'metre-nanometre': '1000000000', 'centimetre-nanometre': '10000000',
                 'millimetre-nanometre': '1000000', 'micrometre-nanometre': '1000', 'nanometre-nanometre': 1, 'mile-nanometre': '1609340000000',
