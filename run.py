@@ -36,7 +36,7 @@ class Temperature:
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit\n")
             temp_selection = pyip.inputMenu(["Celsius", "Fahrenheit", "Kelvin"], numbered=True)
-            temp_value = float(input("\nPlease enter the temperature to convert:"))
+            temp_value = pyip.inputNum("\nPlease enter the temperature to convert:")
             if temp_selection == ("Celsius"):
                 print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
