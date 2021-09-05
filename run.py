@@ -112,6 +112,7 @@ class Temperature:
         else:
             main_menu()
 
+
 class Length:
     def convert_length():
         """
@@ -127,6 +128,8 @@ class Length:
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit\n")
             len_selection = pyip.inputMenu(["Nanometre", "Micrometre", "Millimetre", "Centimetre", "Metre", "Kilometre", "Inch", "Foot", "Yard", "Mile", "Nautical Mile"], numbered=True)
+            print("\nEnter the number of your required unit\n")
+            len_output = pyip.inputMenu(["Nanometre", "Micrometre", "Millimetre", "Centimetre", "Metre", "Kilometre", "Inch", "Foot", "Yard", "Mile", "Nautical Mile"], numbered=True)
             len_value = pyip.inputNum("\nPlease enter the length to convert:")
 
             conversion_factors = {
@@ -178,16 +181,13 @@ class Length:
                 'millimetre-nautical mile': '0.000000539957', 'micrometre-nautical mile': '0.000000000539957',
                 'nanometre-nautical mile': '0.000000000000539957', 'mile-nautical mile': '0.86897439838',
                 'yard-nautical mile': '0.000493735453625', 'foot-nautical mile': '0.000164578484541667',
-                'inch-nautical mile': '1.37148737118056E-05', 'nautical mile-nautical mile': 1
-            
-        
-            if (len_selection in conversion_factors):
-                print(f"\n{len_value} {len_selection} converted equals:")
-                print('{conv_value:.3f}'.format(conv_type=my_key, conv_value=len_value * conversion_factors[len_selection])))
-            
+                'inch-nautical mile': '1.37148737118056E-05', 'nautical mile-nautical mile': '1'
             }
+            length_key = len_selection.lower() + '-' + len_output.lower()
 
-
+                
+            for length_key in conversion_factors:
+                print(f"\n{len_value} {len_selection}s converted equals:")
 
         elif confirm_type == ("no"):
             main_menu()
