@@ -156,32 +156,31 @@ class Length:
                 'micrometre': '1', 'nanometre': '0.001', 'mile': '1609340000', 'yard': '914397.727272727',
                 'foot': '304799.242424242', 'inch': '25399.9368686869', 'nautical mile': '1852000000'},
 
-                'kilometre-nanometre': '1000000000000', 'metre-nanometre': '1000000000', 'centimetre-nanometre': '10000000',
-                'millimetre-nanometre': '1000000', 'micrometre-nanometre': '1000', 'nanometre-nanometre': 1, 'mile-nanometre': '1609340000000',
-                'yard-nanometre': '914397727.272727', 'foot-nanometre': '304799242.424242', 'inch-nanometre': '25399936.8686869',
-                'nautical mile-nanometre': '1852000000000',
+                'nanometre': {'kilometre': '1000000000000', 'metre': '1000000000', 'centimetre': '10000000',
+                'millimetre': '1000000', 'micrometre': '1000', 'nanometre': 1, 'mile': '1609340000000',
+                'yard': '914397727.272727', 'foot': '304799242.424242', 'inch': '25399936.8686869',
+                'nautical mile': '1852000000000'},
 
-                'kilometre-mile': '0.621371', 'metre-mile': '0.000621371', 'centimetre-mile': '0.00000621371', 'millimetre-mile': '0.000000621371',
-                'micrometre-mile': '0.000000000621371', 'nanometre-mile': '0.000000000000621371', 'mile-mile': '1', 'yard-mile': '0.000568180230193182',
-                'foot-mile': '0.000189393410064394', 'inch-mile': '1.57827841720328E-05', 'nautical mile-mile': '1.150779092',
+                'mile': {'kilometre': '0.621371', 'metre': '0.000621371', 'centimetre': '0.00000621371', 'millimetre': '0.000000621371',
+                'micrometre': '0.000000000621371', 'nanometre': '0.000000000000621371', 'mile': '1', 'yard': '0.000568180230193182',
+                'foot': '0.000189393410064394', 'inch': '1.57827841720328E-05', 'nautical mile': '1.150779092'},
 
-                'kilometre-yard': '1093.61296', 'metre-yard': '1.09361296', 'centimetre-yard': '0.0109361296', 'millimetre-yard': '0.00109361296',
-                'micrometre-yard': '0.00000109361296', 'nanometre-yard': '0.00000000109361296', 'mile-yard': '1760', 'yard-yard': '1',
-                'foot-yard': '0.333332401713333', 'inch-yard': '0.0277777001427778', 'nautical mile-yard': '2025.37120192',
+                'yard': {'kilometre': '1093.61296', 'metre': '1.09361296', 'centimetre': '0.0109361296', 'millimetre': '0.00109361296',
+                'micrometre': '0.00000109361296', 'nanometre': '0.00000000109361296', 'mile': '1760', 'yard': '1',
+                'foot': '0.333332401713333', 'inch': '0.0277777001427778', 'nautical mile': '2025.37120192'},
 
-                'kilometre-foot': '3280.83888', 'metre-foot': '3.28083888', 'centimetre-foot': '0.0328083888', 'millimetre-foot': '0.00328083888',
-                'micrometre-foot': '0.00000328083888', 'nanometre-foot': '0.00000000328083888', 'mile-foot': '5280', 'yard-foot': '3', 'foot-foot': '1',
-                'inch-foot': '0.0833331004283333', 'nautical mile-foot': '6076.11360576',
+                'foot': {'kilometre': '3280.83888', 'metre': '3.28083888', 'centimetre': '0.0328083888', 'millimetre': '0.00328083888',
+                'micrometre': '0.00000328083888', 'nanometre': '0.00000000328083888', 'mile': '5280', 'yard': '3', 'foot': '1',
+                'inch': '0.0833331004283333', 'nautical mile': '6076.11360576'},
 
-                'kilometre-inch': '39370.06656', 'metre-inch': '39.37006656', 'centimetre-inch': '0.3937006656', 'millimetre-inch': '0.03937006656',
-                'micrometre-inch': '0.00003937006656', 'nanometre-inch': '0.00000003937006656', 'mile-inch': '63360', 'yard-inch': '36',
-                'foot-inch': '12', 'inch-inch': '1', 'nautical mile-inch': '72913.36326912',
+                'inch': {'kilometre': '39370.06656', 'metre': '39.37006656', 'centimetre': '0.3937006656', 'millimetre': '0.03937006656',
+                'micrometre': '0.00003937006656', 'nanometre': '0.00000003937006656', 'mile': '63360', 'yard': '36',
+                'foot': '12', 'inch': '1', 'nautical mile': '72913.36326912'},
 
-                'kilometre-nautical mile': '0.539957', 'metre-nautical mile': '0.000539957', 'centimetre-nautical mile': '0.00000539957',
-                'millimetre-nautical mile': '0.000000539957', 'micrometre-nautical mile': '0.000000000539957',
-                'nanometre-nautical mile': '0.000000000000539957', 'mile-nautical mile': '0.86897439838',
-                'yard-nautical mile': '0.000493735453625', 'foot-nautical mile': '0.000164578484541667',
-                'inch-nautical mile': '1.37148737118056E-05', 'nautical mile-nautical mile': '1'
+                'nautical mile': {'kilometre': '0.539957', 'metre': '0.000539957', 'centimetre': '0.00000539957',
+                'millimetre': '0.000000539957', 'micrometre': '0.000000000539957', 'nanometre': '0.000000000000539957', 'mile-nautical mile': '0.86897439838',
+                'yard': '0.000493735453625', 'foot': '0.000164578484541667',
+                'inch': '1.37148737118056E-05', 'nautical mile': '1'},
             }
             length_key = len_selection.lower() + '-' + len_output.lower()
 
