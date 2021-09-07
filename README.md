@@ -20,6 +20,10 @@ Upon hitting enter, the user is then presented with their original unit, and it'
 
 #### Main Menu
 
+The main menu prints a simple welcome message and then allows a User to select one of four conversion options, namely temperature, length, volume and currency.
+
+![Main Menu](./assets/images/main-menu.png)
+
 #### Temperature Conversion
 
 #### Length Conversion
