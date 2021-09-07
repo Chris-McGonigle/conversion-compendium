@@ -248,5 +248,18 @@ class Volume:
         elif confirm_type == ("no"):
             main_menu()
 
+
+    def run_again():
+        """
+        Function that asks user do they want to convert again
+        """
+        print("-" * 45)
+        print("\nWould you like to convert another Volume?")
+        convert_again = pyip.inputYesNo("\nY/N:")
+        if convert_again == ("yes"):
+            Volume.convert_volume()
+        else:
+            main_menu()
+
 main_menu()
 
