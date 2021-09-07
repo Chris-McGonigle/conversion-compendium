@@ -24,6 +24,10 @@ The main menu prints a simple welcome message and then allows a User to select o
 
 ![Main Menu](./assets/images/main-menu.png)
 
+If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value. This was acheived by using the PyInputPLus third party module. This was used across all user input fields.
+
+![Selection Error Warning](./assets/images/error-selection.png)
+
 #### Temperature Conversion
 
 #### Length Conversion
