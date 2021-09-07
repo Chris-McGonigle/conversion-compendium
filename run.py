@@ -188,9 +188,21 @@ class Length:
                 for value in length_conversion_factors[length_key]:
                     conv_value = len_value / float(length_conversion_factors[length_key][value])
                     print(f"\n{conv_value} {value}s")
-
+            Length.run_again()        
+                    
         elif confirm_type == ("no"):
             main_menu()
 
+    def run_again():
+        """
+        Function that asks user do they want to convert again
+        """
+        print("-" * 45)
+        print("\nWould you like to convert another Length?")
+        convert_again = pyip.inputYesNo("\nY/N:")
+        if convert_again == ("yes"):
+            Length.convert_length()
+        else:
+            main_menu()
 
 main_menu()
