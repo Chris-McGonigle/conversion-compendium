@@ -11,11 +11,12 @@ You can view the live version of the project here....
 1. [How to use](#how-to-use)
 2. [Features](#features)
     * [Initial Deployment Features](#initial-deployment-features)
-    * [Main Menu](#main-menu)
-    * [Temperature Conversion](#temperature-conversion)
-    * [Length Conversion](#length-conversion)
-    * [Volume Conversion](#volume-conversion)
-    * 
+        * [Main Menu](#main-menu)
+        * [Temperature Conversion](#temperature-conversion)
+        * [Length Conversion](#length-conversion)
+        * [Volume Conversion](#volume-conversion)
+        * 
+    * [Future Features](#future-features)    
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
@@ -126,6 +127,14 @@ Once complete, the user is then prompted as to whether or not they would like to
 <br>
 
 #### Currency Conversion
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
+### Future Features
 
 <br>
 
