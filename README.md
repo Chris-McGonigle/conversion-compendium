@@ -54,6 +54,20 @@ Finally the user is asked if they would like to convert another Temperature. If 
 
 #### Length Conversion
 
+To convert a Length, a user must first select '2' from the Main Menu, and then confirm their choice. 
+
+Once selected, a user is then presented with the Length Conversion menu.
+
+![Length Conversion Menu](./assets/images/length-menu.png)
+
+On this occasion, a user has the ability to select from one of eleven starting units, in either metric or imperial.
+
+As before, inputs are limited to numerical inputs (less than 12) only, and any other input will produce a warning message.
+
+Once a user inputs a figure and hits enter, they are then provided with their starting figure and then ten conversion figures returned.
+
+ 
+
 #### Volume Conversion
 
 #### Currency Conversion
