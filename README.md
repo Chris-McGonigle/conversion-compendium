@@ -64,9 +64,11 @@ On this occasion, a user has the ability to select from one of eleven starting u
 
 As before, inputs are limited to numerical inputs (less than 12) only, and any other input will produce a warning message.
 
-Once a user inputs a figure and hits enter, they are then provided with their starting figure and then ten conversion figures returned.
+Once a user inputs a figure and hits enter, they are then provided with their starting figure and then ten conversion figures are returned.
 
- 
+![Length Conversion Results](./assets/images/length-choice.png)
+
+Finally the user is asked if they would like to convert another Length. If they answer Yes, they are returned to the length conversion menu, and if no, they are returned to the application main menu.
 
 #### Volume Conversion
 

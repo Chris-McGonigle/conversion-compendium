@@ -128,7 +128,6 @@ class Length:
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit\n")
             len_selection = pyip.inputMenu(["Nanometre", "Micrometre", "Millimetre", "Centimetre", "Metre", "Kilometre", "Inch", "Foot", "Yard", "Mile", "Nautical Mile"], numbered=True)
-            print("\nEnter the number of your required unit\n")
             len_value = pyip.inputNum("\nPlease enter the length to convert:")
 
             length_conversion_factors = {
