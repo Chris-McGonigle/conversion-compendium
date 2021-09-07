@@ -20,11 +20,11 @@ Upon hitting enter, the user is then presented with their original unit, and it'
 
 #### Main Menu
 
-The main menu prints a simple welcome message and then allows a User to select one of four conversion options, namely temperature, length, volume and currency.
+The main menu prints a simple welcome message and then prompts a User to select one of four conversion options, namely temperature, length, volume and currency.
 
 ![Main Menu](./assets/images/main-menu.png)
 
-If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value. This was acheived by using the PyInputPlus third party module. This was used across all user input fields.
+If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value. This was acheived by using the [PyInputPlus](https://pypi.org/project/PyInputPlus/) third party module. This was used across all user input fields in the application.
 
 ![Selection Error Warning](./assets/images/error-selection.png)
 
@@ -33,6 +33,12 @@ Upon selecting an option, a User is asked to confirm their choice. If they selec
 ![Selection Validator](./assets/images/intended-choice.png)
 
 #### Temperature Conversion
+
+To convert a Temperature, a user must first select '1' from the Main Menu, and then confirm their choice. 
+
+Once selected, a user is then presented with the Temperature Conversion menu.
+
+![Temperature Conversion Menu](./assets/images/temperature-menu.png)
 
 #### Length Conversion
 
