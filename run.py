@@ -186,10 +186,8 @@ class Length:
 
             if length_key in length_conversion_factors:
                 for value in length_conversion_factors[length_key]:
-                    conv_value = len_value * float(length_conversion_factors[length_key][value])
-                    print(conv_value)
-                    
-                
+                    conv_value = len_value / float(length_conversion_factors[length_key][value])
+                    print(f"\n{conv_value} {value}s")
 
         elif confirm_type == ("no"):
             main_menu()
