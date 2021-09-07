@@ -6,6 +6,21 @@ Users can choose to convert units of Temperature, Length, Volume or Currency.
 
 You can view the live version of the project here....
 
+## Table of Contents
+
+1. [How to use](#how-to-use)
+2. [Features](#features)
+    * [Initial Deployment Features](#initial-deployment-features)
+    * [Main Menu](#main-menu)
+    * [Temperature Conversion](#temperature-conversion)
+    * [Length Conversion](#length-conversion)
+    * 
+    * 
+3. [Technologies Used](#technologies-used)
+4. [Testing](#testing)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+
 ## How to use
 
 Chris's Conversion Compendium is very intuitive to use. Upon running the program, a user is presented with four numerical choices with each type of parent conversion available displayed first.
@@ -32,6 +47,12 @@ Upon selecting an option, a User is asked to confirm their choice. If they selec
 
 ![Selection Validator](./assets/images/intended-choice.png)
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 #### Temperature Conversion
 
 To convert a Temperature, a user must first select '1' from the Main Menu, and then confirm their choice. 
@@ -52,6 +73,12 @@ Once a user inputs a figure and hits enter, they are then provided with their st
 
 Finally the user is asked if they would like to convert another Temperature. If they answer Yes, they are returned to the temperature conversion menu, and if no, they are returned to the application main menu.
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 #### Length Conversion
 
 To convert a Length, a user must first select '2' from the Main Menu, and then confirm their choice. 
@@ -70,9 +97,27 @@ Once a user inputs a figure and hits enter, they are then provided with their st
 
 Finally the user is asked if they would like to convert another Length. If they answer Yes, they are returned to the length conversion menu, and if no, they are returned to the application main menu.
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 #### Volume Conversion
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 #### Currency Conversion
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
 
 ## Technologies Used
 
@@ -82,7 +127,19 @@ Finally the user is asked if they would like to convert another Length. If they 
 * [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site
 * Conversion rates were checked using [Google](https://www.google.co.uk/)
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 ## Testing
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
 
 
 ## Deployment
@@ -98,8 +155,24 @@ This project was deployed using Code Institute's mock Heroku terminal as follows
 
 A live version of the website can be found here....
 
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
+
 ## Credits
 
 1. I viewed numerous Youtube Tutorials to assist in the production of the temperature conversion module, but specifically videos by [Parvat Computer Technology](https://www.youtube.com/watch?v=nW7vQ5h6_Yk), [Geek Tutorials](https://youtu.be/z-0CmOQAD2k), [NetSecProf](https://youtu.be/T67WzZ2HPpI) and [Dexter Learning](https://youtu.be/pCOkIMm2t70) were the most useful in the production of this section.
 
 2. An article on [Automate the Boring Stuff](https://automatetheboringstuff.com/2e/chapter8/) introduced me to the [PyInputPlus](https://pyinputplus.readthedocs.io/en/latest/) third party module which was created and is maintained by Al Sweigart. This module handles all of the user input validation for the interface. 
+
+3. Conversion factors for length conversion were adapted from a tutorial by [Kovolff](https://youtu.be/0XvNDZmuVE4)
+
+4. To assist in my understanding of accessing values in nested dictionaries I viewed lots of tutorials including ones by [Academind](https://youtu.be/oQfNYqz8pLs), [Data Science Tutorials](https://youtu.be/n9DDnOGntHE) and [Ly So](https://youtu.be/4wMKvr_rd8o). I also received assistance on printing out these values from questions asked on [Stack Overflow](https://stackoverflow.com/)
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
