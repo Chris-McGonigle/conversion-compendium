@@ -46,6 +46,12 @@ The user has a choice from one of three starting units, Celsius, Fahrenheit and 
 
 Again as before, inputs are limited to numerical inputs (less than 4) only, and any other input will produce a warning message.
 
+Once a user inputs a figure and hits enter, they are then provided with their starting figure and the two conversion figures returned. 
+
+![Temperature Conversion Results](./assets/images/temperature-results.png)
+
+Finally the user is asked if they would like to convert another Temperature. If they answer Yes, they are returned to the temperature conversion menu, and if no, they are returned to the application main menu.
+
 #### Length Conversion
 
 #### Volume Conversion
