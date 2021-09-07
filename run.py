@@ -219,7 +219,7 @@ class Volume:
 
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit\n")
-            vol_selection = pyip.inputMenu([], numbered=True)
+            vol_selection = pyip.inputMenu(["Millilitre", "Litre", "Cubic Metre", "Cubic Foot", "Cubic Inch", "Imperial Cup", "Imperial Pint", "Imperial Gallon", "US Cup", "US Pint", "US Gallon", ], numbered=True)
             vol_value = pyip.inputNum("\nPlease enter the volume to convert:")
 
             volume_conversion_factors = {
