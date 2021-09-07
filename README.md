@@ -40,6 +40,12 @@ Once selected, a user is then presented with the Temperature Conversion menu.
 
 ![Temperature Conversion Menu](./assets/images/temperature-menu.png)
 
+The user has a choice from one of three starting units, Celsius, Fahrenheit and Kelvin. Upon making their selection, the user is then prompted to enter their figure. 
+
+![Choosing a starting unit](./assets/images/temperature-choice.png)
+
+Again as before, inputs are limited to numerical inputs (less than 4) only, and any other input will produce a warning message.
+
 #### Length Conversion
 
 #### Volume Conversion
