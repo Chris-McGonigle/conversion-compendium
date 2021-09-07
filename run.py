@@ -145,7 +145,7 @@ class Length:
                 'yard': 91.4397727272727, 'foot': 30.4799242424242, 'inch': 2.53999368686869,
                 'nautical mile': 185200},
 
-                'millimetre': {'kilometre': 1000000, 'metre': 1000, 'centimetre': 10, 
+                'millimetre': {'kilometre': 1000000, 'metre': 1000, 'centimetre': 10,
                 'micrometre': 0.001, 'nanometre': 0.000001, 'mile': 1609340,
                 'yard': 914.397727272727, 'foot': 304.799242424242, 'inch': 25.3999368686869,
                 'nautical mile': 1852000},
@@ -187,8 +187,8 @@ class Length:
                 for value in length_conversion_factors[length_key]:
                     conv_value = len_value / float(length_conversion_factors[length_key][value])
                     print(f"\n{conv_value} {value}s")
-            Length.run_again()        
-                    
+            Length.run_again()
+
         elif confirm_type == ("no"):
             main_menu()
 
@@ -204,4 +204,38 @@ class Length:
         else:
             main_menu()
 
+
+class Volume:
+    def convert_volume():
+        """
+        Function to convert volume. Function first checks if selection
+        is what the user intended. If not it loops back to main menu.
+        It then takes the user input which is then passed through
+        the calculation function
+        """
+        print("\nYou have selected Volume. Is this correct?")
+
+        confirm_type = pyip.inputYesNo("\nY/N:")
+
+        if confirm_type == ("yes"):
+            print("\nEnter the number of your starting unit\n")
+            vol_selection = pyip.inputMenu([], numbered=True)
+            vol_value = pyip.inputNum("\nPlease enter the volume to convert:")
+
+            volume_conversion_factors = {
+            }
+            volume_key = vol_selection.lower()
+
+            print(f"\n{vol_value} {vol_selection}s converted equals:")
+
+            if volume_key in volume_conversion_factors:
+                for value in volume_conversion_factors[volume_key]:
+                    conv_value = vol_value / float(volume_conversion_factors[volume_key][value])
+                    print(f"\n{conv_value} {value}s")
+            Volume.run_again()
+
+        elif confirm_type == ("no"):
+            main_menu()
+
 main_menu()
+
