@@ -14,7 +14,7 @@ You can view the live version of the project here....
     * [Main Menu](#main-menu)
     * [Temperature Conversion](#temperature-conversion)
     * [Length Conversion](#length-conversion)
-    * 
+    * [Volume Conversion](#volume-conversion)
     * 
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
@@ -65,7 +65,7 @@ The user has a choice from one of three starting units, Celsius, Fahrenheit and 
 
 ![Choosing a starting unit](./assets/images/temperature-choice.png)
 
-Again as before, inputs are limited to numerical inputs (less than 4) only, and any other input will produce a warning message.
+Again as before, inputs are limited to numerical inputs (less than 4) only, and any other input will produce a warning message. However, as temperature can be measured in below zero degrees, negative number inputs are allowed.
 
 Once a user inputs a figure and hits enter, they are then provided with their starting figure and the two conversion figures returned. 
 
