@@ -116,7 +116,7 @@ For volume conversions, a user has the ability to select from eleven US, imperia
 
 Once a user inputs their required number, they are then provided with ten conversion figures for that unit.
 
-![Volume Conversion Results](./assets/images/results-menu.png)
+![Volume Conversion Results](./assets/images/volume-results.png)
 
 Once complete, the user is then prompted as to whether or not they would like to carry out another volume conversion, or they can return to the main menu.
 
