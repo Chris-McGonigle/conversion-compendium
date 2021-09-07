@@ -223,6 +223,17 @@ class Volume:
             vol_value = pyip.inputNum("\nPlease enter the volume to convert:")
 
             volume_conversion_factors = {
+                'millilitre': {'litre': 1000, 'cubic meter': 1000000, 'cubic foot': 28316.8, 'cubic inch': 16.3871, 'imperial cup': 284.131, 'imperial pint': 568.261, 'imperial gallon': 4546.09, 'us cup': 240, 'us pint': 473.176, 'us gallon': 3785.41},
+                'litre': {'millilitre': 0.001, 'cubic meter': 1000, 'cubic foot': 28.3168, 'cubic inch': 0.0163870370367249, 'imperial cup': 0.284131, 'imperial pint': 0.568261, 'imperial gallon': 4.54609, 'us cup': 0.24, 'us pint': 0.473176, 'us gallon': 3.78541}, 
+                'cubic metre': {'millilitre': 0.000001, 'litre': 0.001, 'cubic foot': 0.0283168, 'cubic inch': 0.000016387064, 'imperial cup': 0.000284131, 'imperial pint': 0.000568261, 'imperial gallon': 0.00454609, 'us cup': 0.00024, 'us pint': 0.000473176, 'us gallon': 0.00378541},
+                'cubic foot': {'millilitre': 0.000035314666721489, 'litre': 0.0353147, 'cubic metre': 35.3147, 'cubic inch': 0.000578704, 'imperial cup': 0.010034, 'imperial pint': 0.020068, 'imperial gallon': 0.160544, 'us cup': 0.00847552, 'us pint': 0.0167101, 'us gallon': 0.133681},
+                'cubic inch': {'millilitre': 0.0610237, 'litre': 61.0237, 'cubic metre': 61023.7, 'cubic foot': 1728, 'imperial cup': 17.3387, 'imperial pint': 34.6774, 'imperial gallon': 277.419, 'us cup': 14.6457, 'us pint': 28.875, 'us gallon': 231},
+                'imperial cup': {'millilitre': 0.00351951, 'litre': 3.51951, 'cubic metre': 3519.51, 'cubic foot': 99.6614, 'cubic inch': 0.0576744, 'imperial pint': 2, 'imperial gallon': 16, 'us cup': 0.844682, 'us pint': 1.66535, 'us gallon': 13.3228},
+                'imperial pint': {'millilitre': 0.00175975, 'litre': 1.75975, 'cubic metre': 1759.75, 'cubic foot': 49.8307, 'cubic inch': 0.0288372, 'imperial cup': 0.5, 'imperial gallon': 8, 'us cup': 0.422341, 'us pint': 0.832674, 'us gallon': 6.66139},
+                'imperial gallon': {'millilitre': 0.000219969, 'litre': 0.219969, 'cubic metre': 219.969, 'cubic foot': 6.22884, 'cubic inch': 0.00360465, 'imperial cup': 0.0625, 'imperial pint': 0.125, 'us cup': 0.0527926, 'us pint': 0.104084, 'us gallon': 0.832674},
+                'us cup': {'millilitre': 0.00416667, 'litre': 4.16667, 'cubic metre': 4166.67, 'cubic foot': 117.986955189, 'cubic inch': 0.0682794, 'imperial cup': 1.18388, 'imperial pint': 2.36776, 'imperial gallon': 18.942, 'us pint': 1.97157, 'us gallon': 15.7725},
+                'us pint': {'millilitre': 0.00211338, 'litre': 2.11338, 'cubic metre': 2113.38, 'cubic foot': 59.8442, 'cubic inch': 0.034632, 'imperial cup': 0.600475, 'imperial pint': 1.20095, 'imperial gallon': 9.6076, 'us cup': 0.50721, 'us gallon': 8},
+                'us gallon': {'millilitre': 0.000264172, 'litre': 0.264172, 'cubic metre': 264.172, 'cubic foot': 7.48052, 'cubic inch': 0.004329, 'imperial cup': 0.0750594, 'imperial pint': 0.150119, 'imperial gallon': 1.20095, 'us cup': 0.0634013, 'us pint': 0.125},
             }
             volume_key = vol_selection.lower()
 
