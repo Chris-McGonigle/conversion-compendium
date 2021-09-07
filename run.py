@@ -16,7 +16,7 @@ def main_menu():
     print("3. Volume")
     print("4. Currency")
 
-    selection = pyip.inputNum("\nPlease enter your selection here:", lessThan=5)
+    selection = pyip.inputNum("\nPlease enter your selection here:",lessThan=5)
 
     if selection == (1):
         Temperature.convert_temp()
@@ -135,7 +135,7 @@ class Length:
             length_conversion_factors = {
                 'kilometre': {'metre': 0.001, 'centimetre': 0.00001, 'millimetre': 0.000001,
                 'micrometre': 0.000000001, 'nanometre': 0.000000000001, 'mile': 1.60934,
-                'yard': 0.000914397727272727, 'foot': 0.000304799242424242, 'inch': 2.53999368686869,
+                'yard': 0.000914397727272727, 'foot': 0.000304799242424242, 'inch': 2.54e-5,
                 'nautical mile': 1.852},
 
                 'metre': {'kilometre': 1000, 'centimetre': 0.01, 'millimetre': 0.001, 'micrometre': 0.000001,
