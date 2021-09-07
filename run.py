@@ -22,6 +22,8 @@ def main_menu():
         Temperature.convert_temp()
     elif selection == (2):
         Length.convert_length()
+    elif selection == (3):
+        Volume.convert_volume()    
 
 
 class Temperature:
