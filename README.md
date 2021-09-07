@@ -8,7 +8,7 @@ You can view the live version of the project here....
 
 ## How to use
 
-Chris's Conversion Compendium is very intuitive to use. Upon running the program, a user is presented with four numerical choices with each type of parent conversion required displayed first.
+Chris's Conversion Compendium is very intuitive to use. Upon running the program, a user is presented with four numerical choices with each type of parent conversion available displayed first.
 
 When an option is selected, a user has to validate their choice, and then select a starting unit to convert. A user is then prompted to enter their numerical value to be converted. 
 
@@ -24,9 +24,13 @@ The main menu prints a simple welcome message and then allows a User to select o
 
 ![Main Menu](./assets/images/main-menu.png)
 
-If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value. This was acheived by using the PyInputPLus third party module. This was used across all user input fields.
+If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value. This was acheived by using the PyInputPlus third party module. This was used across all user input fields.
 
 ![Selection Error Warning](./assets/images/error-selection.png)
+
+Upon selecting an option, a User is asked to confirm their choice. If they select No, the Main Menu is reloaded, and if Yes, the Tempertaure Conversion Selection window opens. A user can confirm using Y, y, yes, YES or Yes and the same for No values.
+
+![Selection Validator](./assets/images/intended-choice.png)
 
 #### Temperature Conversion
 
