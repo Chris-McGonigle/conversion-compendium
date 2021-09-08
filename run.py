@@ -25,6 +25,8 @@ def main_menu():
         Length.convert_length()
     elif selection == (3):
         Volume.convert_volume()
+    elif selection == (4):
+        Currency.convert_currency()    
 
 
 class Temperature:
@@ -482,14 +484,19 @@ class Currency:
             cur_selection = pyip.inputMenu(["AUD",
                                             "CAD",
                                             "CHF",
-                                            "CNY"
+                                            "CNY",
                                             "EUR",
                                             "GBP",
-                                            "INR"
+                                            "INR",
                                             "JPY",
-                                            "NZD"
+                                            "NZD",
                                             "RUB",
                                             "USD",], numbered=True)
             cur_value = pyip.inputNum("\nPlease enter the currency to convert:")
+
+
+
+        elif confirm_type == ("no"):
+            main_menu()    
 
 main_menu()
