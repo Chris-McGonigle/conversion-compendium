@@ -1,4 +1,5 @@
 import pyinputplus as pyip
+from forex_python.converter import CurrencyRates
 
 
 def main_menu():
@@ -26,7 +27,7 @@ def main_menu():
     elif selection == (3):
         Volume.convert_volume()
     elif selection == (4):
-        Currency.convert_currency()    
+        Currency.convert_currency()
 
 
 class Temperature:
@@ -471,7 +472,7 @@ class Currency:
         Function to convert currency. Function first checks if selection
         is what the user intended. If not it loops back to main menu.
         It then takes the user input which is then passed through
-        the calculation function. This function operates with real time 
+        the calculation function. This function operates with real time
         values via the thrid party module forex-python
         """
 
@@ -491,12 +492,33 @@ class Currency:
                                             "JPY",
                                             "NZD",
                                             "RUB",
-                                            "USD",], numbered=True)
-            cur_value = pyip.inputNum("\nPlease enter the currency to convert:")
+                                            "USD"], numbered=True)
+            
+            cur_value = pyip.inputNum("\nPlease enter the amount of currency to convert:")
+
+            print("\nEnter the number of the currency to convert to\n")
+            
+            cur_output = pyip.inputMenu(["AUD",
+                                         "CAD",
+                                         "CHF",
+                                         "CNY",
+                                         "EUR",
+                                         "GBP",
+                                         "INR",
+                                         "JPY",
+                                         "NZD",
+                                         "RUB",
+                                         "USD"], numbered=True)
+
+            c = CurrencyRates()
+            cur_result = c.convert(cur_selection, cur_output, cur_value)
+            final_result = round(cur_result, 2)
+
+            print(f"\n {cur_value} {cur_selection} converts to {final_result} {cur_output}")
 
 
-
+    
         elif confirm_type == ("no"):
-            main_menu()    
+            main_menu()
 
 main_menu()
