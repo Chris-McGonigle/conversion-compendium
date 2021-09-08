@@ -515,10 +515,22 @@ class Currency:
             final_result = round(cur_result, 2)
 
             print(f"\n {cur_value} {cur_selection} converts to {final_result} {cur_output}")
+            Currency.run_again()
 
-
-    
+   
         elif confirm_type == ("no"):
+            main_menu()
+
+    def run_again():
+        """
+        Function that asks user do they want to convert again
+        """
+        print("-" * 45)
+        print("\nWould you like to convert another Currency?")
+        convert_again = pyip.inputYesNo("\nY/N:")
+        if convert_again == ("yes"):
+            Currency.convert_currency()
+        else:
             main_menu()
 
 main_menu()
