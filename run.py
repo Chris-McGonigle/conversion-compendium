@@ -463,4 +463,33 @@ class Volume:
             main_menu()
 
 
+class Currency:
+    def convert_currency():
+        """
+        Function to convert currency. Function first checks if selection
+        is what the user intended. If not it loops back to main menu.
+        It then takes the user input which is then passed through
+        the calculation function. This function operates with real time 
+        values via the thrid party module forex-python
+        """
+
+        print("\nYou have selected Currency. Is this correct?")
+
+        confirm_type = pyip.inputYesNo("\nY/N:")
+
+        if confirm_type == ("yes"):
+            print("\nEnter the number of your starting currency\n")
+            cur_selection = pyip.inputMenu(["AUD",
+                                            "CAD",
+                                            "CHF",
+                                            "CNY"
+                                            "EUR",
+                                            "GBP",
+                                            "INR"
+                                            "JPY",
+                                            "NZD"
+                                            "RUB",
+                                            "USD",], numbered=True)
+            cur_value = pyip.inputNum("\nPlease enter the currency to convert:")
+
 main_menu()
