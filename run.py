@@ -263,15 +263,14 @@ class Length:
                                    'Feet': 0.000164578484541667,
                                    'Inches': 1.37148737118056E-05},
             }
-            length_key = len_selection
 
-            print(f"\n{len_value} {len_selection}s converted equals:")
+            print(f"\n{len_value} {len_selection} converted equals:")
 
-            if length_key in length_conversion_factors:
-                for value in length_conversion_factors[length_key]:
+            if len_selection in length_conversion_factors:
+                for value in length_conversion_factors[len_selection]:
                     conv_value = round(len_value / float(
                                         length_conversion_factors
-                                        [length_key][value]), 4)
+                                        [len_selection][value]), 4)
                     print(f"\n{conv_value} {value}")
             Length.run_again()
 
