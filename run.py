@@ -276,7 +276,7 @@ class Length:
                     conv_value = round(len_value / float(
                                         length_conversion_factors
                                         [len_selection][value]), 4)
-                    print(f"\n{conv_value} {value}")
+                    print(f"{conv_value} {value}")
             Length.run_again()
 
         elif confirm_type == ("no"):
@@ -453,7 +453,7 @@ class Volume:
                     conv_value = round(vol_value / float(
                                         volume_conversion_factors
                                         [vol_selection][value]), 4)
-                    print(f"\n{conv_value} {value}")
+                    print(f"{conv_value} {value}")
             Volume.run_again()
 
         elif confirm_type == ("no"):
