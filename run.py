@@ -448,7 +448,8 @@ class Volume:
                 for value in volume_conversion_factors[volume_key]:
                     conv_value = vol_value / float(volume_conversion_factors
                                                    [volume_key][value])
-                    print(f"\n{conv_value} {value}s")
+                    round_result = round(conv_value, 4)
+                    print(f"\n{round_result} {value}s")
             Volume.run_again()
 
         elif confirm_type == ("no"):
