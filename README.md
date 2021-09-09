@@ -33,7 +33,7 @@ Upon hitting enter, the user is then presented with their original unit, and it'
 
 ## Design Process and Data Model
 
-For the inital deployment of the calculator, it was decided to concentrate on four popular conversion types, (Temperature, Length, volume and Currency) but to design it in such a way that additional conversions could be added at a later date.
+For the inital deployment of the calculator, it was decided to concentrate on four popular conversion types, (Temperature, Length, Volume and Currency) but to design it in such a way that additional conversions could be added at a later date.
 
 The below process flowchart maps out the suggested user journey throughout the site. It was decided to implement a number of validation checks throughout the process to ensure that the user input was the intended one, and to give the user the option to return to a sub-menu, or to the main menu at certain points throughout the process.
 
@@ -41,13 +41,17 @@ The below process flowchart maps out the suggested user journey throughout the s
 
 Each type of conversion uses varying techniques to return the requested values.
 
-As there were only three types of temperature selected to convert, indiviual functions for each type of conversion were constructed to deliver the required output.
+As there were only three types of temperature selected to convert, individual functions for each type of conversion were constructed to deliver the required output.
 
-This method could not be utilised though for the other conversion types due to the large number of outputs that would be produced. For this reason, nested dictionaries were used for the length and volume converters. 
+This method could not be utilised though for the other conversion types due to the large number of functions that would be required to produce each individual output. For this reason, nested dictionaries were used for the length and volume converters. 
 
 Using this method drastically reduced the amount of coding that would be required if one was to use the same method as the temperature conversion. Using nested dictionaries also allows the easy addition of new conversion units, without having to rewrite entire sections of code.
 
-The currency converter utilises a similar method, only that the nested dictionary for currency is accessed via a third part module, [Forex-Python](https://forex-python.readthedocs.io/en/latest/#). This dictionary is updated in real time, and means that the developer does not have to rewrite the conversion dictionaries each day to reflect the most accurate rates. The one drawback of this method is that a user has to be online, whereas the other conversion can be run offline as the data is stored locally.
+Outputs were limited to four decimal places. It was found that not limiting decimal places produced values on accasion up to 10 or 11 places, and this was adding nothing extra for the user to have this much detail, and presentaionally it looked messy and was hard to read. 
+
+On the flip side, two deciaml places did not provide enough data, especially when converted small units into larger units, two deciaml places would retun zero in some cases. Four decimal places was found to be a reasonable compromise, in that it retunred enough information without cluttering up the outputted result. This could very easily be changed though to more or less decimals points, and is at the same time a matter of personal preference. However for the purposes of this project, four places was the final decision.
+
+The currency converter utilises a similar method, only that the nested dictionary for currency is accessed via a third part module, [Forex-Python](https://forex-python.readthedocs.io/en/latest/#). This dictionary is updated in real time, and means that the developer does not have to rewrite the conversion dictionaries each day to reflect the most accurate rates. The one drawback of this method is that a user has to be online, whereas the other conversions can be run offline as the data is stored locally.
 
 <br>
 
@@ -167,7 +171,7 @@ The user is then prompted to select the currency they would like to convert into
 
 ![Output Currency Selecter](./assets/images/currency-output.png)
 
-This was a conscious decision based on a number of factors, the main one being in a real world application, users seeking currency conversion are looking for a specific conversion for a specific purpose, e.g. going on holidays. Providing all of the conversion figures in this instance would be overkill, and make it a little bit more difficult for the user to to see the actual conversion they were after.
+This was a conscious decision based on a number of factors, the main one being in a real world application, users seeking currency conversion are usually looking for a specific conversion for a specific purpose, e.g. going on holidays. Providing all of the conversion figures in this instance would be overkill, and make it a little bit more difficult for the user to to see the actual conversion they were after.
 
 The printed result confirms the input and output currency selected along with the actual figure. The user is then asked would they like to carry out another conversion or they can return to the main menu.
 
@@ -185,9 +189,9 @@ As this convertor utilises the Forex-python module, all results are returned via
 
 Due the the way the interface is designed, it is very easy to add new units to each of the conversion options without having to rewrite the entire code. 
 
-For example, to add a conversion for Cubic Centimetres to the volume calculator, one merely has to add the conversion rates of cubic centimtres in the style of the current dictionaries. This would be driven by user request in the main. In the same fashion, it would also be easy to add other conversions to the calculator, such as Area or Weight/Mass. 
+For example, to add a conversion for Cubic Centimetres to the volume calculator, one merely has to add the conversion rates of Cubic Centimetres in the style of the current dictionaries. This would be driven by user request in the main. In the same fashion, it would also be easy to add other conversions to the calculator, such as Area or Weight/Mass. 
 
-The options are endless for conversions you could add, for eaxmple a Tipping Calculator for restaurants, or a Wages Calculator that would return National Insurance outputs etc. 
+The options are endless for conversions you could add, for example a Tipping Calculator for restaurants, or a Wages Calculator that would return National Insurance outputs etc. 
 
 This could soon become unwieldy though, so there is an argument that specialist calculators such as these would warrant their own standalone interface. This could easily be replicated by cloning this repository and using the necessary conversion calcualtions for each individual application.
 
