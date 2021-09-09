@@ -134,7 +134,21 @@ Once selected a user is displayed the Currency Conversion menu.
 
 ![Currency Conversion Menu](./assets/images/currency-menu.png)
 
+Once a user has selected a starting currency, they are then asked to enter the amount of currency they would like to convert.
 
+![Currency Amount Selecter](./assets/images/currency-amount.png)
+
+The user is then prompted to select the currency they would like to convert into. This differs from the other conversion outputs where they return all of the conversion possibilities. 
+
+![Output Currency Selecter](./assets/images/currency-output.png)
+
+This was a conscious decision based on a number of factors, the main one being in a real world application, users seeking currency conversion are looking for a specific conversion for a specific purpose, e.g. going on holidays. Providing all of the conversion figures in this instance would be overkill, and make it a little bit more difficult for the user to to see the actual conversion they were after.
+
+The printed result confirms the input and output currency selected along with the actual figure. the user is then asked would they like to carry out another conversion or they can return to the main menu.
+
+![Currency Conversion Result](./assets/images/currency-result.png)
+
+As this convertor utilises the Forex-python module, all results are returned via the real time currency rate, so the figure returned is accurate at that exact moment.
 
 <br>
 

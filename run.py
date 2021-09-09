@@ -483,7 +483,7 @@ class Currency:
         confirm_type = pyip.inputYesNo("\nY/N:")
 
         if confirm_type == ("yes"):
-            print("\nEnter the number of your starting currency\n")
+            print("\nEnter the number of your starting currency.\n")
             cur_selection = pyip.inputMenu(["AUD",
                                             "CAD",
                                             "CHF",
@@ -498,7 +498,7 @@ class Currency:
             
             cur_value = pyip.inputNum("\nPlease enter the amount of currency to convert:")
 
-            print("\nEnter the number of the currency to convert to\n")
+            print("\nEnter the number of the currency to convert to:\n")
             
             cur_output = pyip.inputMenu(["AUD",
                                          "CAD",
