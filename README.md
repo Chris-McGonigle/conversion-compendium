@@ -9,7 +9,8 @@ You can view the live version of the project here....
 ## Table of Contents
 
 1. [How to use](#how-to-use)
-2. [Features](#features)
+2. [Design Process and Data Models](#design-process-and-data-models)
+3. [Features](#features)
     * [Initial Deployment Features](#initial-deployment-features)
         * [Main Menu](#main-menu)
         * [Temperature Conversion](#temperature-conversion)
@@ -17,10 +18,10 @@ You can view the live version of the project here....
         * [Volume Conversion](#volume-conversion)
         * [Currency Conversion](#currency-conversion)
     * [Future Features](#future-features)    
-3. [Technologies Used](#technologies-used)
-4. [Testing](#testing)
-5. [Deployment](#deployment)
-6. [Credits](#credits)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 
 ## How to use
 
@@ -28,7 +29,31 @@ Chris's Conversion Compendium is very intuitive to use. Upon running the program
 
 When an option is selected, a user has to validate their choice, and then select a starting unit to convert. A user is then prompted to enter their numerical value to be converted. 
 
-Upon hitting enter, the user is then presented with their original unit, and it's conversion into numerous selected popular outputs. The user is then asked would they like to carry out another conversion, or they can return to the main menu. 
+Upon hitting enter, the user is then presented with their original unit, and it's conversion into numerous selected popular outputs. The user is then asked would they like to carry out another conversion, or they can return to the main menu.
+
+## Design Process and Data Model
+
+For the inital deployment of the calculator, it was decided to concentrate on four popular conversion types, (Temperature, Length, volume and Currency) but to design it in such a way that additional conversions could be added at a later date.
+
+The below process flowchart maps out the suggested user journey throughout the site. It was decided to implement a number of validation checks throughout the process to ensure that the user input was the intended one, and to give the user the option to return to a sub-menu, or to the main menu at certain points throughout the process.
+
+[Process Flowchart](./assets/images/process-flowchart.png)
+
+Each type of conversion uses varying techniques to return the requested values.
+
+As there were only three types of temperature selected to convert, indiviual functions for each type of conversion were constructed to deliver the required output.
+
+This method could not be utilised though for the other conversion types due to the large number of outputs that would be produced. For this reason, nested dictionaries were used for the length and volume converters. 
+
+Using this method drastically reduced the amount of coding that would be required if one was to use the same method as the temperature conversion. Using nested dictionaries also allows the easy addition of new conversion units, without having to rewrite entire sections of code.
+
+The currency converter utilises a similar method, only that the nested dictionary for currency is accessed via a third part module, [Forex-Python](https://forex-python.readthedocs.io/en/latest/#). This dictionary is updated in real time, and means that the developer does not have to rewrite the conversion dictionaries each day to reflect the most accurate rates. The one drawback of this method is that a user has to be online, whereas the other conversion can be run offline as the data is stored locally.
+
+<br>
+
+[Back to top](#table-of-contents)
+
+<br>
 
 ## Features
 
