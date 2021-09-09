@@ -2,7 +2,7 @@
 
 Chris's Conversion Compendium is a Python terminal application that runs in the Code Institue mock terminal on Heroku.
 
-![Chris's Conversion Compendium](./assets/images/deployed-screenshot.jpeg)
+![Chris's Conversion Compendium](./assets/images/deployed-screenshot.png)
 
 Users can choose to convert units of Temperature, Length, Volume or Currency.
 
