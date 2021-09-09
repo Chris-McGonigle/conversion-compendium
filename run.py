@@ -46,21 +46,25 @@ class Temperature:
             print("\nEnter the number of your starting unit.\n")
             temp_selection = pyip.inputMenu(["Celsius", "Fahrenheit", "Kelvin"
                                              ], numbered=True)
-            temp_value = pyip.inputNum("\nPlease enter the temperature to convert:")
+            temp_value = pyip.inputNum("\nPlease enter the temperature to\
+ convert:")
             if temp_selection == ("Celsius"):
                 print(f"\n{temp_value} {temp_selection} converted equals:")
-                print(f"\n{Temperature.celsius2fahrenheit(temp_value)} Fahrenheit")
+                print(f"\n{Temperature.celsius2fahrenheit(temp_value)}\
+ Fahrenheit")
                 print(f"\n{Temperature.celsius2kelvin(temp_value)} Kelvin")
                 Temperature.run_again()
             elif temp_selection == ("Fahrenheit"):
                 print(f"\n{temp_value} {temp_selection} converted equals:")
-                print(f"\n{Temperature.fahrenheit2celsius(temp_value)} Celsius")
+                print(f"\n{Temperature.fahrenheit2celsius(temp_value)}\
+ Celsius")
                 print(f"\n{Temperature.fahrenheit2kelvin(temp_value)} Kelvin")
                 Temperature.run_again()
             elif temp_selection == ("Kelvin"):
                 print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.kelvin2celsius(temp_value)} Celsius")
-                print(f"\n{Temperature.kelvin2fahrenheit(temp_value)} Fahrenheit")
+                print(f"\n{Temperature.kelvin2fahrenheit(temp_value)}\
+ Fahrenheit")
                 Temperature.run_again()
         elif confirm_type == ("no"):
             main_menu()
@@ -516,7 +520,8 @@ class Currency:
             final_result = round(cur_result, 2)
 
             print(
-                f"\n {cur_value} {cur_selection} converts to {final_result} {cur_output}")
+                f"\n {cur_value} {cur_selection} converts to {final_result}\
+ {cur_output}")
             Currency.run_again()
 
         elif confirm_type == ("no"):
