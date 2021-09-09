@@ -130,7 +130,7 @@ Once complete, the user is then prompted as to whether or not they would like to
 
 To convert a Currency, a user must first select '4' from the Main Menu and then confirm their choice.
 
-Once selected a user is displayed the Currency Conversion menu.
+Once selected, a user is displayed the Currency Conversion menu.
 
 ![Currency Conversion Menu](./assets/images/currency-menu.png)
 
@@ -144,7 +144,7 @@ The user is then prompted to select the currency they would like to convert into
 
 This was a conscious decision based on a number of factors, the main one being in a real world application, users seeking currency conversion are looking for a specific conversion for a specific purpose, e.g. going on holidays. Providing all of the conversion figures in this instance would be overkill, and make it a little bit more difficult for the user to to see the actual conversion they were after.
 
-The printed result confirms the input and output currency selected along with the actual figure. the user is then asked would they like to carry out another conversion or they can return to the main menu.
+The printed result confirms the input and output currency selected along with the actual figure. The user is then asked would they like to carry out another conversion or they can return to the main menu.
 
 ![Currency Conversion Result](./assets/images/currency-result.png)
 
@@ -217,6 +217,8 @@ A live version of the website can be found here....
 3. Conversion factors for length conversion were adapted from a tutorial by [Kovolff](https://youtu.be/0XvNDZmuVE4).
 
 4. To assist in my understanding of accessing values in nested dictionaries I viewed lots of tutorials including ones by [Academind](https://youtu.be/oQfNYqz8pLs), [Data Science Tutorials](https://youtu.be/n9DDnOGntHE) and [Ly So](https://youtu.be/4wMKvr_rd8o). I also received assistance on printing out these values from questions asked on [Stack Overflow](https://stackoverflow.com/).
+
+5. Live currency conversion rates are obtained using the [Forex-Python](https://forex-python.readthedocs.io/en/latest/#) Currency Converter third party module.
 
 <br>
 
