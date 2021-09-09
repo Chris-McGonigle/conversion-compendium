@@ -37,7 +37,7 @@ For the inital deployment of the calculator, it was decided to concentrate on fo
 
 The below process flowchart maps out the suggested user journey throughout the site. It was decided to implement a number of validation checks throughout the process to ensure that the user input was the intended one, and to give the user the option to return to a sub-menu, or to the main menu at certain points throughout the process.
 
-![Process Flowchart](./assets/images/process-flowchart.png)
+![Process Flowchart](./assets/images/process-flowchart.jpeg)
 
 Each type of conversion uses varying techniques to return the requested values.
 
@@ -206,6 +206,7 @@ This could soon become unwieldy though, so there is an argument that specialist 
 * [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
 * Conversion rates were checked using [Google](https://www.google.co.uk/).
 * Live currency conversion is implemented via the [Forex-Python](https://forex-python.readthedocs.io/en/latest/#) Currency Converter third party module.
+* [Pep8 Online](http://pep8online.com/) was used to validate the code.
 
 <br>
 
