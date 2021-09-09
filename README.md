@@ -15,7 +15,7 @@ You can view the live version of the project here....
         * [Temperature Conversion](#temperature-conversion)
         * [Length Conversion](#length-conversion)
         * [Volume Conversion](#volume-conversion)
-        * 
+        * [Currency Conversion](#currency-conversion)
     * [Future Features](#future-features)    
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
@@ -128,6 +128,14 @@ Once complete, the user is then prompted as to whether or not they would like to
 
 #### Currency Conversion
 
+To convert a Currency, a user must first select '4' from the Main Menu and then confirm their choice.
+
+Once selected a user is displayed the Currency Conversion menu.
+
+![Currency Conversion Menu](./assets/images/currency-menu.png)
+
+
+
 <br>
 
 [Back to top](#table-of-contents)
@@ -144,12 +152,13 @@ Once complete, the user is then prompted as to whether or not they would like to
 
 ## Technologies Used
 
-* [Lucid Chart](https://www.lucidchart.com/pages/) was used to produce the site flowchart
-* [Python3](https://en.wikipedia.org/wiki/Python_(programming_language) was the language used to produce the converter.
-* User Input Validation was carried out using the third party module [PyInputPlus](https://pyinputplus.readthedocs.io/en/latest/#)
-* [Github](https://github.com/Chris-McGonigle) was used as the repository hosting service
-* [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site
-* Conversion rates were checked using [Google](https://www.google.co.uk/)
+* [Lucid Chart](https://www.lucidchart.com/pages/) was used to produce the site flowchart.
+* [Python3](https://en.wikipedia.org/wiki/Python_programming_language) was the language used to produce the converter.
+* User Input Validation was carried out using the third party module [PyInputPlus](https://pyinputplus.readthedocs.io/en/latest/#).
+* [Github](https://github.com/Chris-McGonigle) was used as the repository hosting service.
+* [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
+* Conversion rates were checked using [Google](https://www.google.co.uk/).
+* Live currency conversion is implemented via the [Forex-Python](https://forex-python.readthedocs.io/en/latest/#) Currency Converter third party module.
 
 <br>
 
