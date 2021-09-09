@@ -271,7 +271,8 @@ class Length:
                 for value in length_conversion_factors[length_key]:
                     conv_value = len_value / float(length_conversion_factors
                                                    [length_key][value])
-                    print(f"\n{conv_value} {value}s")
+                    round_result = round(conv_value, 4)
+                    print(f"\n{round_result} {value}s")
             Length.run_again()
 
         elif confirm_type == ("no"):
