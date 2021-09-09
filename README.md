@@ -2,9 +2,13 @@
 
 Chris's Conversion Compendium is a Python terminal application that runs in the Code Institue mock terminal on Heroku.
 
+![Chris's Conversion Compendium](./assets/images/deployed-screenshot.jpeg)
+
 Users can choose to convert units of Temperature, Length, Volume or Currency.
 
 Please access the [live application](https://conversion-compendium.herokuapp.com/) via this link.
+
+
 
 ## Table of Contents
 
@@ -220,7 +224,35 @@ This could soon become unwieldy though, so there is an argument that specialist 
 
 ## Testing
 
+Code was first tested using the PEP8 Online validator. No issues were found in the code as detailed in the screenshot below:
+
 ![PEP8 Validator Result](./assets/images/pep-results.png)
+
+During coding, an issue arose with the line length. Upon checking the PEP8 guidlines, I discovered the 80 character advisory limit. Where possible, Dictionaries were split with the use of parentheses and curly brackets. 
+
+Backslashes were used in string literal statements when the use of brackets or parentheses resulted in spacing errors on the displayed result. As this is not best practise, these were used sparingly and where no other option was found to work as required.
+
+Once deployed, an issue was discovered where the outputs for Length and Volume calculations scrolled off the terminal due to the amount of conversions carried out. This was not an ideal user experience so the new line character was removed from each respective print statement.
+
+Although user input fields are validated using the PyInput Plus model, these were still all tested to ensure they were working in the expected manner. 
+
+For number inputs, fields were tested using words and blank inputs.
+
+![Number Input Testing](./assets/images/number-input-testing.png)
+
+For Yes/No expected inputs, fields were tested for numbers, words and blanks
+
+![Number Input Testing](./assets/images/yes-no-inputs.png)
+
+YES/No fields were also tested to ensure that they accepted all possible values (YES, Yes, yes, Y, y, NO, No, N, n)
+
+
+
+
+
+
+
+
 
 
 <br>
