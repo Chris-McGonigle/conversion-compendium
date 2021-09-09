@@ -439,16 +439,15 @@ class Volume:
                                'US Cups': 0.0634013,
                                'US Pints': 0.125},
             }
-            volume_key = vol_selection.lower()
 
-            print(f"\n{vol_value} {vol_selection}s converted equals:")
+            print(f"\n{vol_value} {vol_selection} converted equals:")
 
-            if volume_key in volume_conversion_factors:
-                for value in volume_conversion_factors[volume_key]:
+            if vol_selection in volume_conversion_factors:
+                for value in volume_conversion_factors[vol_selection]:
                     conv_value = round(vol_value / float(
                                         volume_conversion_factors
-                                        [volume_key][value]), 4)
-                    print(f"\n{conv_value} {value}s")
+                                        [vol_selection][value]), 4)
+                    print(f"\n{conv_value} {value}")
             Volume.run_again()
 
         elif confirm_type == ("no"):
