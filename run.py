@@ -17,7 +17,7 @@ def main_menu():
     print("3. Volume")
     print("4. Currency")
 
-    selection = pyip.inputNum("\nPlease enter your selection here:",
+    selection = pyip.inputNum("\nPlease enter your selection here:\n",
                               lessThan=5)
 
     if selection == (1):
@@ -40,14 +40,14 @@ class Temperature:
         """
         print("\nYou have selected Temperature. Is this correct?")
 
-        confirm_type = pyip.inputYesNo("\nY/N:")
+        confirm_type = pyip.inputYesNo("\nY/N:\n")
 
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit.\n")
             temp_selection = pyip.inputMenu(["Celsius", "Fahrenheit", "Kelvin"
                                              ], numbered=True)
             temp_value = pyip.inputNum("\nPlease enter the temperature to\
- convert:")
+ convert:\n")
             if temp_selection == ("Celsius"):
                 print(f"\n{temp_value} {temp_selection} converted equals:")
                 print(f"\n{Temperature.celsius2fahrenheit(temp_value)}\
@@ -117,7 +117,7 @@ class Temperature:
         """
         print("-" * 45)
         print("\nWould you like to convert another Temperature?")
-        convert_again = pyip.inputYesNo("\nY/N:")
+        convert_again = pyip.inputYesNo("\nY/N:\n")
         if convert_again == ("yes"):
             Temperature.convert_temp()
         else:
@@ -134,7 +134,7 @@ class Length:
         """
         print("\nYou have selected Length. Is this correct?")
 
-        confirm_type = pyip.inputYesNo("\nY/N:")
+        confirm_type = pyip.inputYesNo("\nY/N:\n")
 
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit\n")
@@ -143,7 +143,8 @@ class Length:
                                             "Metres", "Kilometres", "Inches",
                                             "Feet", "Yards", "Miles",
                                             "Nautical Miles"], numbered=True)
-            len_value = pyip.inputNum("\nPlease enter the length to convert:")
+            len_value = pyip.inputNum("\nPlease enter the length to\
+ convert:\n")
 
             length_conversion_factors = {
                 'Kilometres': {'Metres': 0.001,
@@ -287,7 +288,7 @@ class Length:
         """
         print("-" * 45)
         print("\nWould you like to convert another Length?")
-        convert_again = pyip.inputYesNo("\nY/N:")
+        convert_again = pyip.inputYesNo("\nY/N:\n")
         if convert_again == ("yes"):
             Length.convert_length()
         else:
@@ -304,7 +305,7 @@ class Volume:
         """
         print("\nYou have selected Volume. Is this correct?")
 
-        confirm_type = pyip.inputYesNo("\nY/N:")
+        confirm_type = pyip.inputYesNo("\nY/N:\n")
 
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting unit.\n")
@@ -319,7 +320,8 @@ class Volume:
                                             "US Cups",
                                             "US Pints",
                                             "US Gallons"], numbered=True)
-            vol_value = pyip.inputNum("\nPlease enter the volume to convert:")
+            vol_value = pyip.inputNum("\nPlease enter the volume\
+ to convert:\n")
 
             volume_conversion_factors = {
                 'Millilitres': {'Litres': 1000,
@@ -463,7 +465,7 @@ class Volume:
         """
         print("-" * 45)
         print("\nWould you like to convert another Volume?")
-        convert_again = pyip.inputYesNo("\nY/N:")
+        convert_again = pyip.inputYesNo("\nY/N:\n")
         if convert_again == ("yes"):
             Volume.convert_volume()
         else:
@@ -482,7 +484,7 @@ class Currency:
 
         print("\nYou have selected Currency. Is this correct?")
 
-        confirm_type = pyip.inputYesNo("\nY/N:")
+        confirm_type = pyip.inputYesNo("\nY/N:\n")
 
         if confirm_type == ("yes"):
             print("\nEnter the number of your starting currency.\n")
@@ -499,7 +501,7 @@ class Currency:
                                             "USD"], numbered=True)
 
             cur_value = pyip.inputNum(
-                "\nPlease enter the amount of currency to convert:")
+                "\nPlease enter the amount of currency to convert:\n")
 
             print("\nEnter the number of the currency to convert to:\n")
 
@@ -533,7 +535,7 @@ class Currency:
         """
         print("-" * 45)
         print("\nWould you like to convert another Currency?")
-        convert_again = pyip.inputYesNo("\nY/N:")
+        convert_again = pyip.inputYesNo("\nY/N:\n")
         if convert_again == ("yes"):
             Currency.convert_currency()
         else:
