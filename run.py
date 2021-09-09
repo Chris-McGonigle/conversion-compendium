@@ -231,15 +231,15 @@ class Length:
                           'Nautical Miles': 2025.37120192},
 
                 'Feet': {'Kilometres': 3280.83888,
-                          'Metres': 3.28083888,
-                          'Centimetres': 0.0328083888,
-                          'Millimetres': 0.00328083888,
-                          'Micrometres': 0.00000328083888,
-                          'Nanometres': 0.00000000328083888,
-                          'Miles': 5280,
-                          'Yards': 3,
-                          'Inches': 0.0833331004283333,
-                          'Nautical Miles': 6076.11360576},
+                         'Metres': 3.28083888,
+                         'Centimetres': 0.0328083888,
+                         'Millimetres': 0.00328083888,
+                         'Micrometres': 0.00000328083888,
+                         'Nanometres': 0.00000000328083888,
+                         'Miles': 5280,
+                         'Yards': 3,
+                         'Inches': 0.0833331004283333,
+                         'Nautical Miles': 6076.11360576},
 
                 'Inches': {'Kilometres': 39370.06656,
                            'Metres': 39.37006656,
@@ -493,11 +493,12 @@ class Currency:
                                             "NZD",
                                             "RUB",
                                             "USD"], numbered=True)
-            
-            cur_value = pyip.inputNum("\nPlease enter the amount of currency to convert:")
+
+            cur_value = pyip.inputNum(
+                "\nPlease enter the amount of currency to convert:")
 
             print("\nEnter the number of the currency to convert to:\n")
-            
+
             cur_output = pyip.inputMenu(["AUD",
                                          "CAD",
                                          "CHF",
@@ -514,10 +515,10 @@ class Currency:
             cur_result = c.convert(cur_selection, cur_output, cur_value)
             final_result = round(cur_result, 2)
 
-            print(f"\n {cur_value} {cur_selection} converts to {final_result} {cur_output}")
+            print(
+                f"\n {cur_value} {cur_selection} converts to {final_result} {cur_output}")
             Currency.run_again()
 
-   
         elif confirm_type == ("no"):
             main_menu()
 
@@ -532,5 +533,6 @@ class Currency:
             Currency.convert_currency()
         else:
             main_menu()
+
 
 main_menu()
