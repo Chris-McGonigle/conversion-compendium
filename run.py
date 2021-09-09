@@ -43,7 +43,7 @@ class Temperature:
         confirm_type = pyip.inputYesNo("\nY/N:")
 
         if confirm_type == ("yes"):
-            print("\nEnter the number of your starting unit\n")
+            print("\nEnter the number of your starting unit.\n")
             temp_selection = pyip.inputMenu(["Celsius", "Fahrenheit", "Kelvin"
                                              ], numbered=True)
             temp_value = pyip.inputNum("\nPlease enter the temperature to convert:")
