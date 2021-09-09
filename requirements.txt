@@ -1,1 +1,5 @@
-# Your requirements go here
+forex-python==1.6
+PyInputPlus==0.2.12
+PySimpleValidate==0.2.12
+simplejson==3.17.5
+stdiomask==0.0.6
