@@ -37,7 +37,7 @@ For the inital deployment of the calculator, it was decided to concentrate on fo
 
 The below process flowchart maps out the suggested user journey throughout the site. It was decided to implement a number of validation checks throughout the process to ensure that the user input was the intended one, and to give the user the option to return to a sub-menu, or to the main menu at certain points throughout the process.
 
-[Process Flowchart](./assets/images/process-flowchart.png)
+![Process Flowchart](./assets/images/process-flowchart.png)
 
 Each type of conversion uses varying techniques to return the requested values.
 
