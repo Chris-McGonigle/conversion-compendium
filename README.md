@@ -158,6 +158,14 @@ As this convertor utilises the Forex-python module, all results are returned via
 
 ### Future Features
 
+Due the the way the interface is designed, it is very easy to add new units to each of the conversion options without having to rewrite the entire code. 
+
+For example, to add a conversion for Cubic Centimetres to the volume calculator, one merely has to add the conversion rates of cubic centimtres in the style of the current dictionaries. This would be driven by user request in the main. In the same fashion, it would also be easy to add other conversions to the calculator, such as Area or Weight/Mass. 
+
+The options are endless for conversions you could add, for eaxmple a Tipping Calculator for restaurants, or a Wages Calculator that would return National Insurance outputs etc. 
+
+This could soon become unwieldy though, so there is an argument that specialist calculators such as these would warrant their own standalone interface. This could easily be replicated by cloning this repository and using the necessary conversion calcualtions for each individual application.
+
 <br>
 
 [Back to top](#table-of-contents)
