@@ -29,7 +29,9 @@ Please access the [live application](https://conversion-compendium.herokuapp.com
 
 ## How to use
 
-Chris's Conversion Compendium is very intuitive to use. Upon running the program, a user is presented with four numerical choices with each type of parent conversion available displayed first.
+Chris's Conversion Compendium is very intuitive to use and provides a user with a 'One Stop Shop' for whatever conversion needs they have at that point in time. It has been designed to convert the most commonly used units, and will appeal to a lrage amount of users, due to the differing types of calculation avaiable to them.  
+
+ Upon running the program, a user is presented with four numerical choices with each type of parent conversion available displayed first.
 
 When an option is selected, a user has to validate their choice, and then select a starting unit to convert. A user is then prompted to enter their numerical value to be converted. 
 
@@ -215,6 +217,7 @@ This could soon become unwieldy though, so there is an argument that specialist 
 * Conversion rates were checked using [Google](https://www.google.co.uk/).
 * Live currency conversion is implemented via the [Forex-Python](https://forex-python.readthedocs.io/en/latest/#) Currency Converter third party module.
 * [Pep8 Online](http://pep8online.com/) was used to validate the code.
+* [Heroku](https://www.heroku.com) was used to deploy the application.
 
 <br>
 
