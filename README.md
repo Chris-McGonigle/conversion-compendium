@@ -246,14 +246,9 @@ For Yes/No expected inputs, fields were tested for numbers, words and blanks
 
 YES/No fields were also tested to ensure that they accepted all possible values (YES, Yes, yes, Y, y, NO, No, N, n)
 
+The full results of manual testing can be seen in the below screenshot. It is also available to [download in excel format](./assets/manual-testing.xlsx).
 
-
-
-
-
-
-
-
+![Manual Testing](./assets/images/manual-testing.png)
 
 <br>
 
