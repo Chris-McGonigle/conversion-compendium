@@ -8,8 +8,6 @@ Users can choose to convert units of Temperature, Length, Volume or Currency.
 
 Please access the [live application](https://conversion-compendium.herokuapp.com/) via this link.
 
-
-
 ## Table of Contents
 
 1. [How to use](#how-to-use)
@@ -29,7 +27,7 @@ Please access the [live application](https://conversion-compendium.herokuapp.com
 
 ## How to use
 
-Chris's Conversion Compendium is very intuitive to use and provides a user with a 'One Stop Shop' for whatever conversion needs they have at that point in time. It has been designed to convert the most commonly used units, and will appeal to a lrage amount of users, due to the differing types of calculation avaiable to them.  
+Chris's Conversion Compendium is very intuitive to use and provides a user with a 'One Stop Shop' for whatever conversion needs they have at that point in time. It has been designed to convert the most commonly used units, and will appeal to a large amount of users, due to the differing types of calculation available to them.  
 
  Upon running the program, a user is presented with four numerical choices with each type of parent conversion available displayed first.
 
@@ -39,7 +37,7 @@ Upon hitting enter, the user is then presented with their original unit, and it'
 
 ## Design Process and Data Model
 
-For the inital deployment of the calculator, it was decided to concentrate on four popular conversion types, (Temperature, Length, Volume and Currency) but to design it in such a way that additional conversions could be added at a later date.
+For the initial deployment of the calculator, it was decided to concentrate on four popular conversion types, (Temperature, Length, Volume and Currency) but to design it in such a way that additional conversions could be added at a later date.
 
 The below process flowchart maps out the suggested user journey throughout the site. It was decided to implement a number of validation checks throughout the process to ensure that the user input was the intended one, and to give the user the option to return to a sub-menu, or to the main menu at certain points throughout the process.
 
@@ -53,9 +51,11 @@ This method could not be utilised though for the other conversion types due to t
 
 Using this method drastically reduced the amount of coding that would be required if one was to use the same method as the temperature conversion. Using nested dictionaries also allows the easy addition of new conversion units, without having to rewrite entire sections of code.
 
-Outputs were limited to four decimal places. It was found that not limiting decimal places produced values on accasion up to 10 or 11 places, and this was adding nothing extra for the user to have this much detail, and presentaionally it looked messy and was hard to read. 
+Outputs were limited to four decimal places. It was found that not limiting decimal places produced values on occasion up to 10 or 11 places, and this was adding nothing extra for the user to have this much detail, and presentationally it looked messy and was hard to read. 
 
-On the flip side, two decimal places did not provide enough data, especially when converting small units into larger units, two decimal places would retun zero in some cases. Four decimal places was found to be a reasonable compromise, in that it returned enough information without cluttering up the outputted result. This could very easily be changed though to more or less decimals points, and is at the same time a matter of personal preference. However for the purposes of this project, four places was the final decision.
+On the flip side, two decimal places did not provide enough data, especially when converting small units into larger units, two decimal places would return zero in some cases. 
+
+Four decimal places was found to be a reasonable compromise, in that it returned enough information without cluttering up the outputted result. This could very easily be changed though to more or less decimals points, and is at the same time a matter of personal preference. However for the purposes of this project, four places was the final decision.
 
 The currency converter utilises a similar method, only that the nested dictionary for currency is accessed via a third part module, [Forex-Python](https://forex-python.readthedocs.io/en/latest/#). This dictionary is updated in real time, and means that the developer does not have to rewrite the conversion dictionaries each day to reflect the most accurate rates. The one drawback of this method is that a user has to be online, whereas the other conversions can be run offline as the data is stored locally.
 
@@ -231,13 +231,13 @@ Code was first tested using the PEP8 Online validator. No issues were found in t
 
 ![PEP8 Validator Result](./assets/images/pep-results.png)
 
-During coding, an issue arose with the line length. Upon checking the PEP8 guidlines, I discovered the 80 character advisory limit. Where possible, Dictionaries were split with the use of parentheses and curly brackets. 
+During coding, an issue arose with the line length. Upon checking the PEP8 guidelines, I discovered the 80 character advisory limit. Where possible, dictionaries were split with the use of parentheses and curly brackets. 
 
 Backslashes were used in string literal statements when the use of brackets or parentheses resulted in spacing errors on the displayed result. As this is not best practise, these were used sparingly and where no other option was found to work as required.
 
 Once deployed, an issue was discovered where the outputs for Length and Volume calculations scrolled off the terminal due to the amount of conversions carried out. This was not an ideal user experience so the new line character was removed from each respective print statement.
 
-Although user input fields are validated using the PyInput Plus model, these were still all tested to ensure they were working in the expected manner. 
+Although user input fields are validated using the PyInputPlus model, these were still all tested to ensure they were working in the expected manner. 
 
 For number inputs, fields were tested using words and blank inputs.
 
@@ -249,7 +249,9 @@ For Yes/No expected inputs, fields were tested for numbers, words and blanks
 
 YES/No fields were also tested to ensure that they accepted all possible values (YES, Yes, yes, Y, y, NO, No, N, n)
 
-The full results of manual testing can be seen in the below screenshot. It is also available to [download in excel format](./assets/manual-testing.xlsx).
+The user journey throughout each conversion process was then tested to make sure everything was working as expected. the application passed these tests and the full results of manual testing can be seen in the below screenshot. 
+
+It is also available to [download in excel format](./assets/manual-testing.xlsx).
 
 ![Manual Testing](./assets/images/manual-testing.png)
 
